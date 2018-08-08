@@ -1,0 +1,46 @@
+<sdf version='1.6'>
+  <model name='Cone0'>
+    <link name='Cone0'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0.14605 0 -0 0</pose>
+        <mass>1.6596</mass>
+        <inertia>
+          <ixx>0.0129081</ixx>
+          <ixy>-4.06709e-35</ixy>
+          <ixz>2.05612e-34</ixz>
+          <iyy>0.0129081</iyy>
+          <iyz>-6.5464e-19</iyz>
+          <izz>0.00221664</izz>
+        </inertia>
+      </inertial>
+      <collision name='Cone0_collision'>
+	<!-- Change max_vel and/or min_depth to keep cones from "bouncing" -->
+	<surface>
+	  <contact>
+	    <ode>
+	      <!--max_vel>0</max_vel-->
+	      <min_depth>0.001</min_depth>
+	    </ode>
+	  </contact>
+	</surface>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Cone0/meshes/Cone0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Cone0_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Cone0/meshes/Cone0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

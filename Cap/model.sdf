@@ -1,0 +1,37 @@
+<sdf version='1.6'>
+  <model name='Neleski_Cap'>
+    <link name='Neleski_Cap'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>3e-06 4e-06 0.003969 0 -0 0</pose>
+        <mass>0.07479</mass>
+        <inertia>
+          <ixx>5.25597e-05</ixx>
+          <ixy>4.4367e-09</ixy>
+          <ixz>-6.04432e-10</ixz>
+          <iyy>5.25654e-05</iyy>
+          <iyz>8.96219e-10</iyz>
+          <izz>0.000101324</izz>
+        </inertia>
+      </inertial>
+      <collision name='Neleski_Cap_collision'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>.0254 .0254 .0254</scale>
+            <uri>model://Cap/meshes/Neleski_Cap.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Neleski_Cap_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>.0254 .0254 .0254</scale>
+            <uri>model://Cap/meshes/Neleski_Cap.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

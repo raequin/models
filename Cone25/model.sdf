@@ -1,0 +1,46 @@
+<sdf version='1.6'>
+  <model name='Cone25'>
+    <link name='Cone25'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0.14605 0 -0 0</pose>
+        <mass>14.647</mass>
+        <inertia>
+          <ixx>0.120572</ixx>
+          <ixy>1.05134e-34</ixy>
+          <ixz>5.17909e-34</ixz>
+          <iyy>0.120572</iyy>
+          <iyz>-7.42959e-18</iyz>
+          <izz>0.0328531</izz>
+        </inertia>
+      </inertial>
+      <collision name='Cone25_collision'>
+	<!-- Change max_vel and/or min_depth to keep cones from "bouncing" -->
+	<surface>
+	  <contact>
+	    <ode>
+	      <!--max_vel>0</max_vel-->
+	      <min_depth>0.001</min_depth>
+	    </ode>
+	  </contact>
+	</surface>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Cone25/meshes/Cone25.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Cone25_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Cone25/meshes/Cone25.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

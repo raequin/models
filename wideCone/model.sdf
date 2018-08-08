@@ -1,0 +1,62 @@
+<sdf version='1.6'>
+  <model name='wideCone'>
+    <link name='wideCone'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0 0 0.145 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0</iyy>
+          <iyz>0</iyz>
+          <izz>0</izz>
+        </inertia>
+        <!--mass>9</mass>
+        <inertia>
+          <ixx>0.443658</ixx>
+          <ixy>-4.45426e-18</ixy>
+          <ixz>-4.19225e-18</ixz>
+          <iyy>0.443658</iyy>
+          <iyz>2.2175e-17</iyz>
+          <izz>0.52339</izz>
+        </inertia-->
+      </inertial>
+      <collision name='wideCone_collision'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wideCone/meshes/wideCone.STL</uri>
+          </mesh>
+        </geometry>
+	<surface>
+	  <!--friction>
+	    <ode>
+	      <mu>100.0</mu>
+	      <mu2>100.0</mu2>
+	    </ode>
+	  </friction-->
+	  <contact>
+	    <ode>
+	      <!--kp>1e9</kp>
+	      <kd>1e2</kd-->
+	      <max_vel>0.0005</max_vel>
+	      <min_depth>0.001</min_depth>
+	    </ode>
+	  </contact>
+	</surface>
+      </collision>
+      <visual name='wideCone_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wideCone/meshes/wideCone.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

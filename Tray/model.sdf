@@ -1,0 +1,37 @@
+<sdf version='1.6'>
+  <model name='Tray'>
+    <link name='Tray'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0.15596 0.040781 0.43815 0 -0 0</pose>
+        <mass>32.189</mass>
+        <inertia>
+          <ixx>3.25126</ixx>
+          <ixy>-5.86692e-06</ixy>
+          <ixz>1.7607e-05</ixz>
+          <iyy>4.115</iyy>
+          <iyz>-2.55611e-14</iyz>
+          <izz>0.897647</izz>
+        </inertia>
+      </inertial>
+      <collision name='Tray_collision'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>.001 .001 .001</scale>
+            <uri>model://Tray/meshes/Tray.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Tray_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>.001 .001 .001</scale>
+            <uri>model://Tray/meshes/Tray.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
